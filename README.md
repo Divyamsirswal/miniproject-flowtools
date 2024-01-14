@@ -11,4 +11,3 @@ This website live at :  https://main.d3e7xqdfx53swb.amplifyapp.com/
 - htm2canvas
 - react-qr   
 ```
-``
