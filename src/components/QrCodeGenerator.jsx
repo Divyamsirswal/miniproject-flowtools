@@ -1,4 +1,3 @@
-// QrCodeGenerator.jsx
 import React, { useState, useRef } from "react";
 import QRCode from "react-qr-code";
 import html2canvas from "html2canvas";
@@ -12,8 +11,23 @@ const QrCodeGenerator = () => {
       alert("Please enter text before generating the QR code.");
       return;
     }
-    const qrCodeCanvas = await html2canvas(qrCodeRef.current);
-    const dataUrl = qrCodeCanvas.toDataURL();
+
+    const qrCodeSvg = qrCodeRef.current.querySelector("svg");
+    const canvas = document.createElement("canvas");
+    canvas.width = qrCodeSvg.width.baseVal.value;
+    canvas.height = qrCodeSvg.height.baseVal.value;
+    const context = canvas.getContext("2d");
+    const svgString = new XMLSerializer().serializeToString(qrCodeSvg);
+    const img = new Image();
+    img.src = "data:image/svg+xml," + encodeURIComponent(svgString);
+    await new Promise((resolve) => {
+      img.onload = () => {
+        context.drawImage(img, 0, 0);
+        resolve();
+      };
+    });
+
+    const dataUrl = canvas.toDataURL();
     const downloadLink = document.createElement("a");
     downloadLink.href = dataUrl;
     downloadLink.download = "qrcode.png";
