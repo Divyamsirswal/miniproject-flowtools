@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: sf-sb;
+  src: url(./assets/fonts/sf-pro-display_semibold.ttf);
+}
+
+@font-face {
+  font-family: sf-dm;
+  src: url(./assets/fonts/sf-pro-display_medium.ttf);
+}
+
+@font-face {
+  font-family: sf-li;
+  src: url(../src/assets/fonts/sf-pro-text_light.ttf);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.5s ease-in-out;
+}
