@@ -4,7 +4,7 @@ This website live at :  https://main.d3e7xqdfx53swb.amplifyapp.com/
 
 # Tools 
 
-`tools which is used in this project`
+`tools which are used in this project`
 ```
 - Reactjs
 - Tailwindcss
