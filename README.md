@@ -8,6 +8,6 @@ This website live at :  https://main.d3e7xqdfx53swb.amplifyapp.com/
 ```
 - Reactjs
 - Tailwindcss
-- htm2canvas
-- react-qr   
+- react-qr-code
+- currency api 
 ```
