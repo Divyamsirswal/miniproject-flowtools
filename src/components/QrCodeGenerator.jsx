@@ -14,8 +14,11 @@ const QrCodeGenerator = () => {
 
     const qrCodeSvg = qrCodeRef.current.querySelector("svg");
     const canvas = document.createElement("canvas");
+    
     canvas.width = qrCodeSvg.width.baseVal.value;
+    
     canvas.height = qrCodeSvg.height.baseVal.value;
+    
     const context = canvas.getContext("2d");
     const svgString = new XMLSerializer().serializeToString(qrCodeSvg);
     const img = new Image();
