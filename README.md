@@ -1,7 +1,8 @@
 # Flow tools
 
 This website live at :  https://main.d3e7xqdfx53swb.amplifyapp.com/
-                     :  http://ec2-13-201-81-200.ap-south-1.compute.amazonaws.com/
+---
+Also : http://ec2-13-201-81-200.ap-south-1.compute.amazonaws.com/
 
 # Tools 
 
