@@ -9,5 +9,6 @@ This website live at :  https://main.d3e7xqdfx53swb.amplifyapp.com/
 - Reactjs
 - Tailwindcss
 - react-qr-code
-- currency api 
+- currency api
+- react-responsive
 ```
